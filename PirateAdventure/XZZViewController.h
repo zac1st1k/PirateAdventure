@@ -10,4 +10,6 @@
 
 @interface XZZViewController : UIViewController
 
+@property (nonatomic) CGPoint currentPoint;
+
 @end
