@@ -136,16 +136,6 @@
                                     <action selector="southButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="guC-Od-RXO"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXi-IL-4kY">
-                                <rect key="frame" x="172" y="493" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="W">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="westButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jOM-cL-cZR"/>
-                                </connections>
-                            </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xc-a6-nWm">
                                 <rect key="frame" x="210" y="463" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -166,6 +156,16 @@
                                     <action selector="eastButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xkJ-iE-hQL"/>
                                 </connections>
                             </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDe-ua-V5c">
+                                <rect key="frame" x="178" y="493" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="W">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="westButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LDk-Fw-QBy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -177,8 +177,9 @@
                         <outlet property="healthLabel" destination="794-9v-8YE" id="FPx-Ll-qou"/>
                         <outlet property="northButton" destination="3xc-a6-nWm" id="WLz-fP-kNQ"/>
                         <outlet property="southButton" destination="VgZ-yX-qyM" id="Ouf-ld-uTV"/>
+                        <outlet property="storyLabel" destination="de0-6l-YLB" id="RcH-ZC-VAN"/>
                         <outlet property="weaponLabel" destination="Wxc-Mc-oER" id="oRF-wQ-Oe7"/>
-                        <outlet property="weatButton" destination="MXi-IL-4kY" id="GGC-KU-g1q"/>
+                        <outlet property="westButton" destination="vDe-ua-V5c" id="hgi-Q2-9U1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
