@@ -13,53 +13,56 @@
 
 - (NSArray *)tiles;
 {
-    XZZTile *title1 = [[XZZTile alloc] init];
-    title1.story = @"story 1";
-    XZZTile *title2 = [[XZZTile alloc] init];
-    title2.story = @"story 2";
-    XZZTile *title3 = [[XZZTile alloc] init];
-    title3.story = @"story 3";
+    XZZTile *tile1 = [[XZZTile alloc] init];
+    tile1.story = @"1 Captain, we need a fearless leader such as you to undertake a voyage. You must stop the evil pirate Boss before he steals any more plunder. Would you like a blunted sword to get started?";
+//    tile1.backgroundImage = [UIImage imageNamed:@"PirateStart.png"];
+    XZZTile *tile2 = [[XZZTile alloc] init];
+    tile2.story = @"2 You have come across an armory. Would you like to upgrade your armor to steel armor?";
+    XZZTile *tile3 = [[XZZTile alloc] init];
+    tile3.story = @"3 A mysterious dock appears on the horizon. Should we stop and ask for directions?";
+    
     
     NSMutableArray *firstColumn = [[NSMutableArray alloc] init];
-    [firstColumn addObject:title1];
-    [firstColumn addObject:title2];
-    [firstColumn addObject:title3];
+    [firstColumn addObject:tile1];
+    [firstColumn addObject:tile2];
+    [firstColumn addObject:tile3];
     
-    XZZTile *title4 = [[XZZTile alloc] init];
-    title4.story = @"story 4";
-    XZZTile *title5 = [[XZZTile alloc] init];
-    title5.story = @"story 5";
-    XZZTile *title6 = [[XZZTile alloc] init];
-    title6.story = @"story 6";
+    XZZTile *tile4 = [[XZZTile alloc] init];
+    tile4.story = @"4 You have found a parrot can be used in your armor slot! Parrots are a great defender and are fiercly loyal to their captain.";
+    
+    XZZTile *tile5 = [[XZZTile alloc] init];
+    tile5.story = @"5 You have stumbled upon a cache of pirate weapons. Would you like to upgrade to a pistol?";
+    XZZTile *tile6 = [[XZZTile alloc] init];
+    tile6.story = @"6 You have been captured by pirates and are ordered to walk the plank";
     
     NSMutableArray *secondColumn = [[NSMutableArray alloc] init];
-    [secondColumn addObject:title4];
-    [secondColumn addObject:title5];
-    [secondColumn addObject:title6];
+    [secondColumn addObject:tile4];
+    [secondColumn addObject:tile5];
+    [secondColumn addObject:tile6];
     
-    XZZTile *title7 = [[XZZTile alloc] init];
-    title7.story = @"story 7";
-    XZZTile *title8 = [[XZZTile alloc] init];
-    title8.story = @"story 8";
-    XZZTile *title9 = [[XZZTile alloc] init];
-    title9.story = @"story 9";
+    XZZTile *tile7 = [[XZZTile alloc] init];
+    tile7.story = @"7 You sight a pirate battle off the coast";
+    XZZTile *tile8 = [[XZZTile alloc] init];
+    tile8.story = @"8 The legend of the deep, the mighty kraken appears";
+    XZZTile *tile9 = [[XZZTile alloc] init];
+    tile9.story = @"9 You stumble upon a hidden cave of pirate treasurer";
     
     NSMutableArray *thirdColumn = [[NSMutableArray alloc] init];
-    [thirdColumn addObject:title7];
-    [thirdColumn addObject:title8];
-    [thirdColumn addObject:title9];
+    [thirdColumn addObject:tile7];
+    [thirdColumn addObject:tile8];
+    [thirdColumn addObject:tile9];
     
-    XZZTile *title10 = [[XZZTile alloc] init];
-    title10.story = @"story 10";
-    XZZTile *title11 = [[XZZTile alloc] init];
-    title11.story = @"story 11";
-    XZZTile *title12 = [[XZZTile alloc] init];
-    title12.story = @"story 12";
+    XZZTile *tile10 = [[XZZTile alloc] init];
+    tile10.story = @"10 A group of pirates attempts to board your ship";
+    XZZTile *tile11 = [[XZZTile alloc] init];
+    tile11.story = @"11 In the deep of the sea many things live and many things can be found. Will the fortune bring help or ruin?";
+    XZZTile *tile12 = [[XZZTile alloc] init];
+    tile12.story = @"12 Your final faceoff with the fearsome pirate boss";
     
     NSMutableArray *forthColumn = [[NSMutableArray alloc] init];
-    [forthColumn addObject:title10];
-    [forthColumn addObject:title11];
-    [forthColumn addObject:title12];
+    [forthColumn addObject:tile10];
+    [forthColumn addObject:tile11];
+    [forthColumn addObject:tile12];
     
     NSArray *tiles = [[NSArray alloc]initWithObjects:firstColumn, secondColumn, thirdColumn, forthColumn,nil];
     
