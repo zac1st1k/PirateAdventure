@@ -22,6 +22,8 @@
 		117B7A5E1A27247300082A3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117B7A3D1A27247300082A3D /* UIKit.framework */; };
 		117B7A661A27247300082A3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 117B7A641A27247300082A3D /* InfoPlist.strings */; };
 		117B7A681A27247300082A3D /* PirateAdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B7A671A27247300082A3D /* PirateAdventureTests.m */; };
+		117B7A741A27FFBB00082A3D /* XZZTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B7A731A27FFBB00082A3D /* XZZTile.m */; };
+		117B7A771A2800AC00082A3D /* XZZFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B7A761A2800AC00082A3D /* XZZFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		117B7A631A27247300082A3D /* PirateAdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PirateAdventureTests-Info.plist"; sourceTree = "<group>"; };
 		117B7A651A27247300082A3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		117B7A671A27247300082A3D /* PirateAdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PirateAdventureTests.m; sourceTree = "<group>"; };
+		117B7A721A27FFBB00082A3D /* XZZTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZTile.h; sourceTree = "<group>"; };
+		117B7A731A27FFBB00082A3D /* XZZTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZTile.m; sourceTree = "<group>"; };
+		117B7A751A2800AC00082A3D /* XZZFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZFactory.h; sourceTree = "<group>"; };
+		117B7A761A2800AC00082A3D /* XZZFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				117B7A4E1A27247300082A3D /* Main_iPad.storyboard */,
 				117B7A511A27247300082A3D /* XZZViewController.h */,
 				117B7A521A27247300082A3D /* XZZViewController.m */,
+				117B7A711A27FF8600082A3D /* Model */,
 				117B7A541A27247300082A3D /* Images.xcassets */,
 				117B7A401A27247300082A3D /* Supporting Files */,
 			);
@@ -153,6 +160,25 @@
 				117B7A641A27247300082A3D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		117B7A711A27FF8600082A3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				117B7A781A2800C300082A3D /* Factory */,
+				117B7A721A27FFBB00082A3D /* XZZTile.h */,
+				117B7A731A27FFBB00082A3D /* XZZTile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		117B7A781A2800C300082A3D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				117B7A751A2800AC00082A3D /* XZZFactory.h */,
+				117B7A761A2800AC00082A3D /* XZZFactory.m */,
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117B7A771A2800AC00082A3D /* XZZFactory.m in Sources */,
 				117B7A461A27247300082A3D /* main.m in Sources */,
 				117B7A4A1A27247300082A3D /* XZZAppDelegate.m in Sources */,
+				117B7A741A27FFBB00082A3D /* XZZTile.m in Sources */,
 				117B7A531A27247300082A3D /* XZZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "XZZViewController.h"
+#import "XZZFactory.h"
 
 @interface XZZViewController ()
 
@@ -18,20 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSString *firstString = @"First String";
-    NSString *secondString = @"Second String";
+    XZZFactory *factory = [[XZZFactory alloc] init];
+    NSArray *tiles = [factory tiles];
+    NSLog(@"%@",tiles);
     
-    NSArray *myArray = [[NSArray alloc] initWithObjects:firstString, secondString, nil];
-    NSLog(@"%@", myArray);
-    NSMutableArray *myMutableArray = [[NSMutableArray alloc] init];
-    [myMutableArray addObject:firstString];
-    [myMutableArray addObject:myArray];
-    NSLog(@"%@", myMutableArray);
+    
     
 //    CGPoint myPoint = CGPointMake(3, 3);
-
-    self.currentPoint = CGPointMake(3, 4);
-    NSLog(@"%f %f", self.currentPoint.x, self.currentPoint.y);
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert!" message:@"Hello!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+//    [alertView show];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,4 +38,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actionButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)southButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)westButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)northButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)eastButtonPressed:(UIButton *)sender {
+}
 @end
