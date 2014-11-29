@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XZZCharacter.h"
 
 @interface XZZFactory : NSObject
 
 - (NSArray *)tiles;
+- (XZZCharacter *)character;
 
 @end

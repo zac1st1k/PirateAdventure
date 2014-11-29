@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XZZCharacter.h"
 
 @interface XZZViewController : UIViewController
 
 //iVars
 @property (nonatomic) CGPoint currentPoint;
 @property (strong, nonatomic) NSArray *tiles;
+@property (strong, nonatomic) XZZCharacter *character;
 
 //IBOutlets
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;

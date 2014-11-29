@@ -13,5 +13,8 @@
 @property (strong, nonatomic) NSString *story;
 @property (strong, nonatomic) UIImage *backgroundImage;
 @property (strong, nonatomic) NSString *actionButtonName;
+//@property (strong, nonatomic) XZZWeapon *weapon;
+//@property (strong, nonatomic) XZZArmor *armor;
+@property (nonatomic) int healtheffect;
 
 @end
