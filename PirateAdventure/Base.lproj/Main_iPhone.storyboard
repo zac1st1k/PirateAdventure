@@ -87,7 +87,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzX-dl-vg8">
-                                        <rect key="frame" x="112" y="25" width="44" height="30"/>
+                                        <rect key="frame" x="18" y="25" width="245" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Action">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -166,6 +166,16 @@
                                     <action selector="westButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LDk-Fw-QBy"/>
                                 </connections>
                             </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15g-8H-BHx">
+                                <rect key="frame" x="51" y="392" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fiK-nE-hGx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -176,6 +186,7 @@
                         <outlet property="eastButton" destination="qQX-9H-2iu" id="cm4-oC-NPi"/>
                         <outlet property="healthLabel" destination="794-9v-8YE" id="FPx-Ll-qou"/>
                         <outlet property="northButton" destination="3xc-a6-nWm" id="WLz-fP-kNQ"/>
+                        <outlet property="resetButton" destination="15g-8H-BHx" id="OfB-T8-B5G"/>
                         <outlet property="southButton" destination="VgZ-yX-qyM" id="Ouf-ld-uTV"/>
                         <outlet property="storyLabel" destination="de0-6l-YLB" id="RcH-ZC-VAN"/>
                         <outlet property="weaponLabel" destination="Wxc-Mc-oER" id="oRF-wQ-Oe7"/>

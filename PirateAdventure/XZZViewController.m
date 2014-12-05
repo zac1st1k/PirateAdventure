@@ -24,8 +24,10 @@
     self.tiles = [factory tiles];
     self.character = [factory character];
     self.currentPoint = CGPointMake(0, 0);
+    self.boss = [factory boss];
     [self updateTile];
     [self updateButtons];
+    
 //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert!" message:@"Hello!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
 //    [alertView show];
     
@@ -39,6 +41,12 @@
 }
 
 - (IBAction)actionButtonPressed:(UIButton *)sender {
+    XZZTile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+    if (tile.healtheffect == -15) {
+        self.boss.health = self.boss.health - self.character.damage;
+    }
+    [self updateCharacterStatsForArmor:tile.armor withWeapons:tile.weapon withHealthEffect:tile.healtheffect];
+    [self updateTile];
 }
 
 
@@ -76,9 +84,10 @@
     self.storyLabel.text = tileModel.story;
     self.backgroundImageView.image = tileModel.backgroundImage;
     self.healthLabel.text = [NSString stringWithFormat:@"%i", self.character.health];
-    self.damageLabel.text = [NSString stringWithFormat:@"%i", self.character.demage];
+    self.damageLabel.text = [NSString stringWithFormat:@"%i", self.character.damage];
     self.weaponLabel.text = self.character.weapon.name;
     self.armorLabel.text = self.character.armor.name;
+    [self.actionButton setTitle:tileModel.actionButtonName forState:UIControlStateNormal];
 }
 
 - (void)updateButtons
@@ -96,6 +105,25 @@
     }
     else
         return YES;
+}
+
+-(void)updateCharacterStatsForArmor:(XZZArmor *)armor withWeapons:(XZZWeapon *) weapon withHealthEffect:(int)healthEffect
+{
+    if (armor != nil) {
+        self.character.health = self.character.health - self.character.armor.health + armor.health;
+        self.character.armor = armor;
+    }
+    else if (weapon != nil) {
+        self.character.damage = self.character.damage - self.character.weapon.damage + weapon.damage;
+        self.character.weapon = weapon;
+    }
+    else if (healthEffect != 0){
+        self.character.health = self.character.health + healthEffect;
+    }
+    else {
+        self.character.health = self.character.health + self.character.armor.health;
+        self.character.damage = self.character.damage + self.character.damage;
+    }
 }
 
 @end

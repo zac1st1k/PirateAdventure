@@ -14,7 +14,7 @@
 
 @property (strong, nonatomic) XZZArmor *armor;
 @property (strong, nonatomic) XZZWeapon *weapon;
-@property (nonatomic) int demage;
+@property (nonatomic) int damage;
 @property (nonatomic) int health;
 
 @end

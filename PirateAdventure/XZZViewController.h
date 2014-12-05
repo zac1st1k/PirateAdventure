@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XZZCharacter.h"
+#import "XZZBoss.h"
 
 @interface XZZViewController : UIViewController
 
@@ -15,6 +16,7 @@
 @property (nonatomic) CGPoint currentPoint;
 @property (strong, nonatomic) NSArray *tiles;
 @property (strong, nonatomic) XZZCharacter *character;
+@property (strong, nonatomic) XZZBoss *boss;
 
 //IBOutlets
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
@@ -30,6 +32,7 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *northButton;
 @property (strong, nonatomic) IBOutlet UIButton *eastButton;
+@property (strong, nonatomic) IBOutlet UIButton *resetButton;
 
 
 - (IBAction)actionButtonPressed:(UIButton *)sender;
@@ -37,5 +40,6 @@
 - (IBAction)westButtonPressed:(UIButton *)sender;
 - (IBAction)northButtonPressed:(UIButton *)sender;
 - (IBAction)eastButtonPressed:(UIButton *)sender;
+- (IBAction)resetButtonPressed:(id)sender;
 
 @end

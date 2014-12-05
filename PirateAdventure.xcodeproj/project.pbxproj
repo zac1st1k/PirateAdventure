@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112300E21A31A6BD00F4E658 /* XZZBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = 112300E11A31A6BD00F4E658 /* XZZBoss.m */; };
 		11513F3E1A2994DC0046C0D3 /* XZZWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 11513F3D1A2994DC0046C0D3 /* XZZWeapon.m */; };
 		11513F411A29951B0046C0D3 /* XZZArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 11513F401A29951B0046C0D3 /* XZZArmor.m */; };
 		11513F441A29955C0046C0D3 /* XZZCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11513F431A29955C0046C0D3 /* XZZCharacter.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112300E01A31A6BD00F4E658 /* XZZBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZBoss.h; sourceTree = "<group>"; };
+		112300E11A31A6BD00F4E658 /* XZZBoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZBoss.m; sourceTree = "<group>"; };
 		11513F3C1A2994DC0046C0D3 /* XZZWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZWeapon.h; sourceTree = "<group>"; };
 		11513F3D1A2994DC0046C0D3 /* XZZWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZWeapon.m; sourceTree = "<group>"; };
 		11513F3F1A29951B0046C0D3 /* XZZArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZArmor.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				11513F401A29951B0046C0D3 /* XZZArmor.m */,
 				11513F421A29955C0046C0D3 /* XZZCharacter.h */,
 				11513F431A29955C0046C0D3 /* XZZCharacter.m */,
+				112300E01A31A6BD00F4E658 /* XZZBoss.h */,
+				112300E11A31A6BD00F4E658 /* XZZBoss.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				11513F3E1A2994DC0046C0D3 /* XZZWeapon.m in Sources */,
 				117B7A4A1A27247300082A3D /* XZZAppDelegate.m in Sources */,
 				117B7A741A27FFBB00082A3D /* XZZTile.m in Sources */,
+				112300E21A31A6BD00F4E658 /* XZZBoss.m in Sources */,
 				117B7A531A27247300082A3D /* XZZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

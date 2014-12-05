@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "XZZCharacter.h"
+#import "XZZBoss.h"
 
 @interface XZZFactory : NSObject
 
 - (NSArray *)tiles;
 - (XZZCharacter *)character;
+- (XZZBoss *)boss;
 
 @end

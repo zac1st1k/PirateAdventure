@@ -126,4 +126,11 @@
     return character;
 }
 
+- (XZZBoss *)boss;
+{
+    XZZBoss *boss = [[XZZBoss alloc] init];
+    boss.health = 65;
+    return boss;
+}
+
 @end
