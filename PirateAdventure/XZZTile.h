@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XZZWeapon.h"
+#import "XZZArmor.h"
 
 @interface XZZTile : NSObject
 
 @property (strong, nonatomic) NSString *story;
 @property (strong, nonatomic) UIImage *backgroundImage;
 @property (strong, nonatomic) NSString *actionButtonName;
-//@property (strong, nonatomic) XZZWeapon *weapon;
-//@property (strong, nonatomic) XZZArmor *armor;
+
+@property (strong, nonatomic) XZZWeapon *weapon;
+@property (strong, nonatomic) XZZArmor *armor;
 @property (nonatomic) int healtheffect;
 
 @end
