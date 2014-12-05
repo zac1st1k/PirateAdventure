@@ -40,6 +40,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - IBAction
+
 - (IBAction)actionButtonPressed:(UIButton *)sender {
     XZZTile *tile = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
     if (tile.healtheffect == -15) {
@@ -87,8 +89,12 @@
 }
 
 - (IBAction)resetButtonPressed:(id)sender {
+    self.character = nil;
+    self.boss = nil;
+    [self viewDidLoad];
 }
 
+#pragma mark - Helper methods
 
 - (void)updateTile
 {
