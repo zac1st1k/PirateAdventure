@@ -46,6 +46,15 @@
         self.boss.health = self.boss.health - self.character.damage;
     }
     [self updateCharacterStatsForArmor:tile.armor withWeapons:tile.weapon withHealthEffect:tile.healtheffect];
+    if (self.character.health <= 0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Death Message" message:@"You have died please restart the game!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
+    }
+    else if (self.boss.health <= 0){
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Victory Message" message:@"You have defeated the evil pirate boss!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
+    }
+    
     [self updateTile];
 }
 
@@ -75,6 +84,9 @@
     [self updateButtons];
     [self updateTile];
 
+}
+
+- (IBAction)resetButtonPressed:(id)sender {
 }
 
 
